@@ -22,14 +22,17 @@ function colors()
 }
 colors()
 function insert() {
-    document.querySelectorAll('.square').forEach(square => {
+    document.querySelectorAll('.square').forEach(square => { 
+        if (square.innerText.length != 0)
+        {
         if (square.classList.contains('pawn')) {
-            square.innerHTML = `<img class='allimg allpawn' src="${square.classList[0]}.png" alt="">`;
+            square.innerHTML = `<img class='allimg-allpawn' src="${square.classList[0]}.png" alt="">`; // 
             square.style.cursor = 'pointer';
-        } else {
+        } else { 
             square.innerHTML = `<img class='allimg' src="${square.classList[0]}.png" alt="">`;
             square.style.cursor = 'pointer';
         }
+    }
     });
 }
 insert();
