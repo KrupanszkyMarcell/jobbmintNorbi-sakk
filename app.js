@@ -26,11 +26,12 @@ function insert() {
         if (square.innerText.length != 0)
         {
         if (square.classList.contains('pawn')) {
-            square.innerHTML = `<img class='allimg-allpawn' src="${square.classList[0]}.png" alt="">`; // 
+            square.innerHTML = `<img class='allimg-allpawn' src="${square.innerText}.png" alt="">`;
+            console.log(square.classList);
             square.style.cursor = 'pointer';
         } 
         else { 
-            square.innerHTML = `<img class='allimg' src="${square.classList[0]}.png" alt="">`;
+            square.innerHTML = `<img class='allimg' src="${square.innerText}.png" alt="">`;
             square.style.cursor = 'pointer';
         }
     }
