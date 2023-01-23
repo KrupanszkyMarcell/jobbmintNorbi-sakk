@@ -22,25 +22,14 @@ function colors()
 }
 colors()
 function insert() {
-<<<<<<< HEAD
     document.querySelectorAll('.square').forEach(square => { 
         if (square.innerText.length != 0)
         {
         if (square.classList.contains('pawn')) {
             square.innerHTML = `<img class='allimg-allpawn' src="${square.classList[0]}.png" alt="">`; // 
             square.style.cursor = 'pointer';
-        } else { 
-=======
-    document.querySelectorAll('.square').forEach(square => {
-        if (square.innerText.length !=0 )
-        {
-
-        if (square.classList.contains('pawn') ) {
-            square.innerHTML = `<img class='allimg allpawn' src="${square.classList[0]}.png" alt="">`;
-            square.style.cursor = 'pointer';
         } 
-        else {
->>>>>>> ea5b5009c75d2b98038a07cb4b0bf0e37a44ddc4
+        else { 
             square.innerHTML = `<img class='allimg' src="${square.classList[0]}.png" alt="">`;
             square.style.cursor = 'pointer';
         }
