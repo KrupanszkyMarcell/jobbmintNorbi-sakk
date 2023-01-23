@@ -27,7 +27,6 @@ function insert() {
         {
         if (square.classList.contains('pawn')) {
             square.innerHTML = `<img class='allimg-allpawn' src="${square.innerText}.png" alt="">`;
-            console.log(square.classList);
             square.style.cursor = 'pointer';
         } 
         else { 
