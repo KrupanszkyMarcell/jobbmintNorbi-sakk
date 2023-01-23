@@ -10,7 +10,7 @@ function colors()
         map = mapside + mapup
         if (map % 2 == 0 )
         {
-            color.style.backgroundColor = 'rgb(240, 200, 150)'
+            color.style.backgroundColor = 'rgb(255,255,255)'
         }
         if (map % 2 !== 0)
         {
