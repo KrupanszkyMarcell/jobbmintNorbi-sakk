@@ -1,4 +1,4 @@
-// Inserting the Images
+
 function insertImage() {
 
     document.querySelectorAll('.square').forEach(image => {
@@ -22,7 +22,6 @@ insertImage()
 
 
 
-//Coloring
 
 function coloring() {
     const color = document.querySelectorAll('.square')
@@ -50,7 +49,7 @@ coloring()
 
 
 
-//function to not remove the same team element
+
 
 function reddish() {
     document.querySelectorAll('.square').forEach(i1 => {
@@ -82,9 +81,7 @@ function reddish() {
                         i2.style.backgroundColor = 'rgb(100, 75, 43)'
                     }
 
-                    // if (pinkColor == greenColor) {
-                    //     i2.style.backgroundColor = 'rgb(253, 60, 60)'
-                    // }
+
                 }
             })
         }
@@ -108,7 +105,6 @@ document.querySelectorAll('.square').forEach(item => {
 
     item.addEventListener('click', function () {
 
-        // To delete the opposite element
 
         if (item.style.backgroundColor == 'green' && item.innerText.length == 0) {
             tog = tog + 1
@@ -143,7 +139,7 @@ document.querySelectorAll('.square').forEach(item => {
 
 
 
-        // Function to display the available paths for all pieces
+
 
         function whosTurn(toggle) {
 
@@ -476,14 +472,14 @@ document.querySelectorAll('.square').forEach(item => {
         }
 
 
-        // Toggling the turn
+
 
         if (tog % 2 !== 0) {
-            document.getElementById('tog').innerText = "White's Turn"
+            document.getElementById('tog').innerText = "Fehér jön"
             whosTurn('W')
         }
         if (tog % 2 == 0) {
-            document.getElementById('tog').innerText = "Black's Turn"
+            document.getElementById('tog').innerText = "Fekete jön"
             whosTurn('B')
         }
 
@@ -491,7 +487,6 @@ document.querySelectorAll('.square').forEach(item => {
 
 
 
-        // winning()
 
         numOfKings = 0
 
@@ -506,11 +501,11 @@ document.querySelectorAll('.square').forEach(item => {
         if (numOfKings == 1) {
             setTimeout(() => {
                 if (tog % 2 == 0) {
-                    alert('White Wins !!')
+                    alert('Fehér Nyert')
                     location.reload()
                 }
                 else if (tog % 2 !== 0) {
-                    alert('Black Wins !!')
+                    alert('Fekete nyert')
                     location.reload()
                 }
             }, 100)
@@ -526,7 +521,7 @@ document.querySelectorAll('.square').forEach(item => {
 
 
 
-// Moving the element
+
 document.querySelectorAll('.square').forEach(hathiTest => {
 
     hathiTest.addEventListener('click', function () {
@@ -561,7 +556,7 @@ document.querySelectorAll('.square').forEach(hathiTest => {
 
 
 
-// Prvents from selecting multiple elements
+
 z = 0
 document.querySelectorAll('.square').forEach(ee => {
     ee.addEventListener('click', function () {
